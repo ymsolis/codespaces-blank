@@ -107,15 +107,15 @@ flex-direction: column;
 input {
   padding: 5px 10px;
   font-size: 14px;
-  
+  border-radius: 20px;
    font-family:rock salt;
 
 }
 
 button {
-  font-size: 14px;
+  font-size: 20px;
   padding: 5px 10px;
-
+  border-radius: 20px;
   color: #C1BCAC ;
    
     text-align: center;

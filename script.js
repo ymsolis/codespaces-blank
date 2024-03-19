@@ -5,6 +5,9 @@ let infoLink = document.querySelector(".info-link");
 
 let add = document.querySelector(".add");
 
+ let display=document.querySelector(".display");
+
+
 let disImage=document.querySelector(".display-image");
 let disName=document.querySelector(".display-name");
 let disHabit=document.querySelector(".display-habit");
@@ -60,12 +63,6 @@ function addFrogInfo() {
 // let show= collection.length;
 // result.innerHTML = `there are ${show} frogs in your collection`;
 
-function emptyDisplay() {
-  disImage.innerHTML = "";
-  disName.innerHTML = "";
-  disHabit.innerHTML = "";
-  dislink.innerHTML = "";
-}
 
 
 
@@ -79,11 +76,10 @@ function displayFrogInfo() {
   //   dislink.insertAdjacentHTML('beforeend', `<p><a href=${item.info_link} target="_blank">Click Here</a> </p>`);
   // });
 
-   let display=document.querySelector(".display");
    collection.forEach(function(item) {
     display.insertAdjacentHTML('beforeend', `<div class="container">
 
-    <img src=${item.frog_image}></img>
+    <img src=${item.frog_image}>
     <div class="side">
     <h4>${item.frog_name}</h4>
     <h4>${item.frog_habit}</h4>
@@ -110,3 +106,9 @@ add.onclick = function() {
  };
 
  displayFrogInfo();
+
+function emptyDisplay() {
+
+  display.innerHTML="";
+
+}
